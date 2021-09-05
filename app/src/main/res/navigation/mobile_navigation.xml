@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_reports">
+
+    <fragment
+        android:id="@+id/nav_reports"
+        android:label="@string/menu_reports"
+        android:name="za.co.gundula.navdrawer.ui.home.HomeFragment"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_privacy"
+        android:label="@string/menu_privacy"
+        android:name="za.co.gundula.navdrawer.ui.gallery.GalleryFragment"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_bugs"
+        android:label="@string/menu_bugs"
+        android:name="za.co.gundula.navdrawer.ui.slideshow.SlideshowFragment"
+        tools:layout="@layout/fragment_slideshow" />
+</navigation>
